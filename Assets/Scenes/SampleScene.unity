@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: -0.79, y: 2.52, z: -16.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -465,10 +465,10 @@ RectTransform:
   m_Father: {fileID: 1457049895}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7957075}
-  m_AnchorMax: {x: 1, y: 0.7957075}
-  m_AnchoredPosition: {x: 0, y: 78.45001}
-  m_SizeDelta: {x: 0, y: 153.1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 229.45001}
+  m_SizeDelta: {x: 388, y: 153.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1412687689
 MonoBehaviour:
@@ -585,7 +585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1457049892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,12 +760,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801312010}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fa29984cc9a2014c91b817e3c6cfcdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stackDebug: {fileID: 1054535339}
+  prefabs:
+  - {fileID: 8766147303945561670, guid: 9c7ffb92207887a4ebe1385e39ff2bfe, type: 3}
+  - {fileID: 1634553849295105699, guid: 791ba2eb237d58f469876b0e0655a1c9, type: 3}
+  - {fileID: 877157517240314268, guid: 2b6648adaebf0ee49986292aca0e5cf2, type: 3}
+  - {fileID: 4678896652952337059, guid: 601f997795d9a354bbae19402f6820dd, type: 3}
 --- !u!4 &1801312012
 Transform:
   m_ObjectHideFlags: 0
@@ -787,12 +792,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801312010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a50e558581ce70b408a10e3a5eaa386a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stackDebug: {fileID: 1054535339}
+  prefabs:
+  - {fileID: 8766147303945561670, guid: 9c7ffb92207887a4ebe1385e39ff2bfe, type: 3}
+  - {fileID: 1634553849295105699, guid: 791ba2eb237d58f469876b0e0655a1c9, type: 3}
+  - {fileID: 877157517240314268, guid: 2b6648adaebf0ee49986292aca0e5cf2, type: 3}
+  - {fileID: 4678896652952337059, guid: 601f997795d9a354bbae19402f6820dd, type: 3}
 --- !u!1 &1984068937
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,8 @@ public class StackExample : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI stackDebug;
+    int test = 0;
+    public GameObject[] prefabs;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +18,18 @@ public class StackExample : MonoBehaviour
         Stack stack = new Stack();
 
         //prepare our data
-        int firstPlayerScore = 12;
+        /*int firstPlayerScore = 12;
         int secondPlayerScore = 10;
-        int thirdPlayerScore = 100;
+        int thirdPlayerScore = 100;*/
         //push a new player score into stack
-        stack.Push(firstPlayerScore);
-        stack.Push(secondPlayerScore);
-        stack.Push(thirdPlayerScore);
+        for (int i = 0; i < prefabs.Length; i++)
+        {
+            stack.Push(prefabs[i]);
+        }
+       
+        /*stack.Push(prefabs[1]);
+        stack.Push(prefabs[2]);
+        stack.Push(prefabs[3]);*/
 
         //show information in stack
         ShowInformationInStack(stack);
@@ -34,10 +41,12 @@ public class StackExample : MonoBehaviour
     }
     void ShowInformationInStack(Stack stack)
     {
-        foreach(var stackitem in stack)
+        foreach(GameObject stackitem in stack)
         {
             stackDebug.text += "...............\n";
             stackDebug.text += $"{stackitem}\n";
+            Instantiate(stackitem, transform.position + new Vector3(0, test, 0), Quaternion.identity);
+            test = test + 2;
             print($"{stackitem}\n");
         }
     }
